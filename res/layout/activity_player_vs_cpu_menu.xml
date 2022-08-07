@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".PlayerVsCpuMenu" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:text="Player Vs Computer"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40sp" 
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/startGameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="82dp"
+        android:text="Start new Game !" 
+        android:onClick="onButtonClick"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="136dp"
+        android:text="Choose level "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000"
+        android:textSize="40sp" />
+
+    <RadioGroup
+        android:id="@+id/radioSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/easyRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Easy         "
+            android:onClick="onRadioButtonClicked"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/normalRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Normal        " 
+            android:onClick="onRadioButtonClicked"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/hardRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hard"
+            android:onClick="onRadioButtonClicked" 
+            android:textColor="#000000" />
+    </RadioGroup>
+
+</RelativeLayout>
